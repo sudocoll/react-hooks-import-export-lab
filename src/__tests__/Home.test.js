@@ -4,8 +4,8 @@ import Home from "../components/Home";
 
 test("it is exported as a default export", () => {
   try {
-    expect(() => render(<Home />)).not.toThrow();
+    render(<Home />);
   } catch (e) {
-    throw new Error("Make sure to export this component!");
+    throw new Error("The component could not be rendered.");
   }
 });
